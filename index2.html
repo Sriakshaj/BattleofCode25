@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>KP PRODUCTS</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+      <link href="style.css" rel="stylesheet">
+
+      <script src="main.js"></script>
+      <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-size: 18px;
+            text-align: center;
+            border: 2px groove black;
+        }
+        th, td {
+            border: 2px groove black;
+            padding: 10px;
+        }
+        th {
+            background-color: orange;
+        }
+        td{
+            background-color: gray;
+        }
+        h2 {
+            text-align: center;
+        }
+          body {
+              background-color: white;
+          }
+    </style>
+  </head>
+  <body style="text-align: center;">
+      <div style="position: fixed; top: 0; color: white; background-color: navy; width: 100%; display: flex; justify-content: center; text-align: center" class="container">
+          <button id="button1" onclick="product();" style="margin-right: 100px;  margin-left: 450px;">Products</button>
+         <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; width: 200px; color: orange;" onclick="home();">KP MART</h1>
+         <button id="button2" onclick="contact();" style="margin-left: 100px; margin-right: 430px;">Contact</button>
+
+         </div>
+      <br>
+      <br>
+      <br>
+      <br>
+<div style="text-align: left; margin-top: 50px;">
+    <h1 style="font-size: 80px; color: black;">Our Products</h1>
+    <hr style="border: none; border-top: 5px dashed black; height: 0; width: 53%; margin: 10px 0;">
+</div>
+    <br>
+    <div style="flex-direction: column; width: 100%;">
+    <div style="flex-direction: row; width: 100%; display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; gap: 20px; margin-top: 0px;">
+        <a href="#HOUSE"><button style="background-color: navy; color: white; border-radius: 15px; height: 180px; width: 180px; flex-direction: column; cursor: pointer; transition: all 0.3s ease-in-out;" class="animated-button"><img src="">Household Items</button></a>
+        <a href="#DRINKS"><button style="background-color: navy; color: white; border-radius: 15px; height: 180px; width: 180px; flex-direction: column; cursor: pointer; transition: all 0.3s ease-in-out;" class="animated-button"><img src="">Beverages</button></a>
+        <a href="#FRUITS"><button style="background-color: navy; color: white; border-radius: 15px; height: 180px; width: 180px; flex-direction: column; cursor: pointer; transition: all 0.3s ease-in-out;" class="animated-button"><img src="">Fruits&Vegetables</button></a>
+        <a href="#SNACKS"><button style="background-color: navy; color: white; border-radius: 15px; height: 180px; width: 180px; flex-direction: column; cursor: pointer; transition: all 0.3s ease-in-out;" class="animated-button"><img src="">Snacks</button></a>
+        </div>
+        <div style="flex-direction: row; width: 100%; display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; gap: 20px; margin-top: 20px; background-color: white;">
+            <a href="#MEAT"><button style="background-color: navy; color: white; border-radius: 15px; height: 180px; width: 180px; flex-direction: column; cursor: pointer; transition: all 0.3s ease-in-out;" class="animated-button"><img src="">Meat&Poultry</button></a>
+            <a href="#CAKE"><button style="background-color: navy; color: white; border-radius: 15px; height: 180px; width: 180px; flex-direction: column; cursor: pointer; transition: all 0.3s ease-in-out;" class="animated-button"><img src="">Bakery</button></a>
+            <a href="#FREEZE"><button style="background-color: navy; color: white; border-radius: 15px; height: 180px; width: 180px; flex-direction: column; cursor: pointer; transition: all 0.3s ease-in-out;" class="animated-button"><img src="">Dairy&Refrigerated Items</button></a>
+            <a href="#CLEAN"><button style="background-color: navy; color: white; border-radius: 15px; height: 180px; width: 180px; flex-direction: column; cursor: pointer; transition: all 0.3s ease-in-out;" class="animated-button"><img src="">Personal Care</button></a>
+            </div>
+    </div>
+    <br style="background-color: white;">
+    <br style="background-color: white;">
+<div style="text-align: center; background-color: white; ">
+    <h1 style="font-weight: bolder; font-size: 130px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: black;">List of Items</h1>
+    <table>
+        <tr>
+            <th id="HOUSE">Category</th>
+            <th>Item</th>
+            <th>Brand</th>
+            <th>Price (AED)</th>
+        </tr>
+        <tr id="DRINKS">
+            <td rowspan="4">Household Items</td>
+            <td rowspan="2">Toilet Paper</td>
+            <td>Charmin (12 rolls)</td>
+            <td>18-22 AED</td>
+        </tr>
+        <tr>
+            <td>Kleenex (10 rolls)</td>
+            <td>15-20 AED</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Laundry Detergent</td>
+            <td>Ariel (1.5 kg)</td>
+            <td>20-25 AED</td>
+        </tr>
+        <tr>
+            <td>Tide (1.5 kg)</td>
+            <td>22-28 AED</td>
+        </tr>
+        <tr id="FRUITS">
+            <td rowspan="3">Beverages</td>
+            <td rowspan="2">Bottled Water</td>
+            <td>Aquafina (1.5 L)</td>
+            <td>2-3 AED</td>
+        </tr>
+        <tr>
+            <td>Masafi (1.5 L)</td>
+            <td>2.5-3 AED</td>
+        </tr>
+        <tr>
+            <td>Soft Drinks</td>
+            <td>Coca-Cola (330 ml)</td>
+            <td>2.5-3 AED</td>
+        </tr>
+
+        <tr id="SNACKS">
+            <td rowspan="4">Fruits and Vegetables</td>
+            <td rowspan="2">Apples</td>
+            <td>Green Apples (1 kg)</td>
+            <td>10-15 AED</td>
+        </tr>
+        <tr>
+            <td>Red Apples (1 kg)</td>
+            <td>12-18 AED</td>
+        </tr>
+        <tr>
+            <td>Bananas</td>
+            <td>Dole (1 kg)</td>
+            <td>7-9 AED</td>
+        </tr>
+        <tr>
+            <td>Oranges</td>
+            <td>Sunkist (1 kg)</td>
+            <td>8-10 AED</td>
+        </tr>
+
+        <tr id="MEAT">
+            <td rowspan="3">Snacks</td>
+            <td rowspan="2">Potato Chips</td>
+            <td>Lays (150 g)</td>
+            <td>5-7 AED</td>
+        </tr>
+        <tr>
+            <td>Pringles (200 g)</td>
+            <td>8-10 AED</td>
+        </tr>
+        <tr>
+            <td>Chocolate Bar</td>
+            <td>Mars (100 g)</td>
+            <td>5-7 AED</td>
+        </tr>
+
+       <tr id="CAKE">
+            <td rowspan="3">Meat and Poultry</td>
+            <td rowspan="2">Chicken Fillets</td>
+            <td>Al Ain (1 kg)</td>
+            <td>25-35 AED</td>
+        </tr>
+        <tr>
+            <td>Al Khazna (1 kg)</td>
+            <td>28-38 AED</td>
+        </tr>
+        <tr>
+            <td>Beef Round</td>
+            <td>Al Islami (1 kg)</td>
+            <td>30-40 AED</td>
+        </tr>
+
+        <tr id="CAKE">
+            <td rowspan="3">Bakery</td>
+            <td rowspan="2">White Bread</td>
+            <td>Shams (500 g)</td>
+            <td>5-6 AED</td>
+        </tr>
+        <tr>
+            <td>Al Rawabi (500 g)</td>
+            <td>6-7 AED</td>
+        </tr>
+        <tr>
+            <td>Croissants</td>
+            <td>Maison Blanc (pack of 4)</td>
+            <td>12-15 AED</td>
+        </tr>
+
+        <tr id="FREEZE">
+            <td rowspan="3">Dairy and Refrigerated Items</td>
+            <td rowspan="2">Cheese</td>
+            <td>Kraft (200 g)</td>
+            <td>7-10 AED</td>
+        </tr>
+        <tr>
+            <td>Puck (200 g)</td>
+            <td>8-12 AED</td>
+        </tr>
+        <tr>
+            <td>Eggs</td>
+            <td>Al Rawabi (dozen)</td>
+            <td>10-12 AED</td>
+        </tr>
+       <tr id="CLEAN">
+            <td rowspan="3">Personal Care</td>
+            <td rowspan="2">Shampoo</td>
+            <td>Head & Shoulders (400 ml)</td>
+            <td>12-15 AED</td>
+        </tr>
+        <tr>
+            <td>Dove (400 ml)</td>
+            <td>14-18 AED</td>
+        </tr>
+        <tr>
+            <td>Toothpaste</td>
+            <td>Colgate (100 ml)</td>
+            <td>5-7 AED</td>
+        </tr> 
+
+    </table>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>

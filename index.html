@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>CodeBattle25</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link href="style.css" rel="stylesheet">
+      <script src="main.js"></script>
+      <style>
+      html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        color: white;
+    }
+
+
+    .container {
+        max-width: 720px;
+    }
+
+    body .container {
+        max-width: 100%;
+    }
+
+    #button1, #button2 {
+        border-radius: 15px;
+        height: 70px;
+        width: 250px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .floattext {
+        background-color: orange;
+        padding: 10px;
+        font-size: 20px;
+        border: 1px solid black;
+        border-radius: 5px;
+        visibility: visible;
+        z-index: 50;
+        position : "fixed";
+        top : "50%";
+        left : "50%";
+        transform : "translate(-50%, -50%)";
+
+    }
+
+    .congruency {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: auto; 
+      }
+
+      .slideshow-container {
+        width: 400px;
+        height: 250px;
+        position: relative;
+        overflow: hidden;
+        background-color: #fff;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .slide {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        text-align: center;
+        padding: 20px;
+        opacity: 0;
+        transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
+      }
+
+      .slide.active {
+        left: 0;
+        opacity: 1;
+      }
+
+      .slide.prev {
+        left: -100%;
+        opacity: 0;
+      }
+
+      .slide.next {
+        left: 100%;
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body style="text-align: center;">
+      <div style="position: fixed; top: 0; color: white; background-color: navy; width: 100%; display: flex; justify-content: center; text-align: center; z-index: 100; padding: 15px 0;" class="container">
+          <button id="button1" onclick="product();" style="margin-right: 100px; margin-left: 450px; background-color: orange; color: navy; font-weight: bold;">Products</button>
+          <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; width: 200px; color: orange; cursor: pointer;" onclick="home();">KP MART</h1>
+          <button id="button2" onclick="contact();" style="margin-left: 100px; margin-right: 430px; background-color: orange; color: navy; font-weight: bold;">Contact</button>
+      </div>
+
+      <br><br><br><br>
+      <img src="https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-3foodgroups_fruits_detailfeature_thumb.jpg?sfvrsn=7abe71fe_4" style="z-index: -1; width: 100%; height: 500px;">
+
+      <div class="float">
+          <div class="floattext" id="floaty">
+              Your Market for Everyday Needs
+          </div>
+      </div>
+      <div class="congruency" style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: auto;">
+          <img src="https://i.pinimg.com/736x/48/86/24/4886241409b1c5803b57332f1048ca40.jpg" style="height: 200px; width: 100px; margin-right: 180px;">
+          <div class="slideshow-container" style="width: 400px; height: 250px; position: relative; overflow: hidden; background-color: #fff; border: 2px solid #ccc; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+              <div class="slide active" style=" left: 0; opacity: 1; flex-direction: column;">
+                <p style="font-size: 22px;">Welcome to the KP Mart website!
+                <p style="font-size: 15px;">KP Mart is convinience store for all your day-to-day needs, you can find KP Mart near your local community, We're glad to welcome you with open hands as we continue to expand our offerings to meet new customers everyday 😄</p></p>
+              </div>
+              <div class="slide" style="width: 100%; height: 100%; position: absolute; top: 0; left: 100%; display: flex; justify-content: center; align-items: center; font-size: 24px; text-align: center; padding: 20px; opacity: 0; transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out; flex-direction: column;">
+                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 40px;"> Legacy</p>
+                  <p style="font-size: 15px;">Established in 2005, KP mart has been serving the UAE since its inception. We have a strong history of providing high-quality products and excellent customer service, we continue to expand our offerings to meet new customers everyday 🫂 </p>
+              </div>
+              <div class="slide" style="flex-direction: column;" >
+                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 40px;">What we Sell</p>
+                <p style="font-size: 15px;">At KP Mart, we have a variety of goods at sale, such as cleaning products, beverages, fruits and vegetables, snacks, bread and cakes, poultry and meat, dairy products, and personal care products.</p>
+              </div>
+      </div>
+      <img    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd6ebLVhqnYwjpiKA6fqYD5gzyQ2bIiLGqyA&s" style="height: 200px; width: 200px; margin-left: 180px;">
+          
+        </div>
+      <div style="text-align: center; color: navy;"> Scroll in the box to switch slides</div>
+      <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        let isScrolling = false;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active', 'prev', 'next');
+                slide.style.transition = "left 0.5s ease-in-out, opacity 0.5s ease-in-out";
+
+                if (i === index) {
+                    slide.classList.add('active');
+                    slide.style.left = "0";
+                    slide.style.opacity = "1";
+                } else if (i === (index - 1 + slides.length) % slides.length) {
+                    slide.classList.add('prev');
+                    slide.style.left = "-100%";
+                    slide.style.opacity = "0";
+                } else if (i === (index + 1) % slides.length) {
+                    slide.classList.add('next');
+                    slide.style.left = "100%";
+                    slide.style.opacity = "0";
+                }
+            });
+        }
+
+        document.querySelector('.slideshow-container').addEventListener('wheel', function (event) {
+            if (isScrolling) return;
+
+            isScrolling = true;
+
+            if (event.deltaY > 0) {
+                currentSlide = (currentSlide + 1) % slides.length;
+            } else {
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            }
+
+            showSlide(currentSlide);
+            event.preventDefault();
+
+            setTimeout(() => {
+                isScrolling = false;
+            }, 600);
+        });
+
+        showSlide(currentSlide);
+    });
+</script>    
+  </body>
+</html>
